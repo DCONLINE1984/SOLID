@@ -6,9 +6,7 @@
  * @author Dean Clow
  */
 
-use S\Bad\Classes\AreaCalculator;
-use S\Bad\Classes\Circle;
-use S\Bad\Classes\Square;
+include_once('../../bootstrap.php');
 
 $areas = new S\Bad\Classes\AreaCalculator([
     new S\Bad\Classes\Circle(2),

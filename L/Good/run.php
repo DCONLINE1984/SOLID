@@ -6,10 +6,7 @@
  * @author Dean Clow
  */
 
-use S\Good\Classes\AreaCalculator;
-use S\Good\Classes\Circle;
-use S\Good\Classes\Square;
-use S\Good\Classes\AreaOutputter;
+include_once('../../bootstrap.php');
 
 $areas = new L\Good\Classes\AreaCalculator([
     new L\Good\Classes\Circle(2),
@@ -17,5 +14,7 @@ $areas = new L\Good\Classes\AreaCalculator([
     new L\Good\Classes\Square(6)
 ]);
 
-print L\Good\Classes\AreaOutputter()->outputHTML($areas->sum());
-print L\Good\Classes\AreaOutputter()->outputJSON($areas->sum());
+print "\n";
+print L\Good\Classes\AreaOutputter::outputHTML($areas->sum());
+print "\n";
+print L\Good\Classes\AreaOutputter::outputJSON($areas->sum());
